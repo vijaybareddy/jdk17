@@ -25,7 +25,7 @@ public class Test {
         order.price=600;
         order.address=address;
 
-        System.out.println(order.orderItems.products.productName);
+        System.out.println(order);
 
 
     }
