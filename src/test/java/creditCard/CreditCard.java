@@ -1,6 +1,6 @@
 package creditCard;
 
-public class CreditCard {
+public class  CreditCard {
     public String cardNumber;
     public String cardHolderName;
     public String cvv;
