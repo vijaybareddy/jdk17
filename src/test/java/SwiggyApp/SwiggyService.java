@@ -25,9 +25,9 @@ public class SwiggyService {
 
         Restaurent restaurent1 = new Restaurent();
         restaurent1.Name = "bawarachi";
-        restaurent1.PhNo = "9010005566";
+        restaurent1.PhNo = "9010005555";
         restaurent.Rating = "4.5";
-        Address restaurent1Address = new Address("LB Nager", "5", "45-888", "500043");
+        Address restaurent1Address = new Address("hitech city", "2", "4-348", "500043");
 
         Dishes chicken1 = new Dishes("Chicken", 650);
         Dishes mutton1 = new Dishes("Mutton", 850);
@@ -41,9 +41,9 @@ public class SwiggyService {
         restaurent1.dishesList = dishes1;
         Restaurent restaurent2 = new Restaurent();
         restaurent2.Name = "bawarachi";
-        restaurent2.PhNo = "9010005566";
+        restaurent2.PhNo = "9010005577";
         restaurent.Rating = "4.5";
-        Address restaurent2Address = new Address("LB Nager", "5", "45-888", "500043");
+        Address restaurent2Address = new Address("sr nager", "7", "4-38", "500045");
 
         Dishes chicken2 = new Dishes("Chicken", 650);
         Dishes mutton2 = new Dishes("Mutton", 850);
