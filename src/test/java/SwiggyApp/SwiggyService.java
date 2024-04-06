@@ -34,11 +34,11 @@ public class SwiggyService {
         Dishes fish1 = new Dishes("fish", 750);
 
         List<Dishes> dishes1 = new ArrayList<>();
-        dishes.add(chicken);
-        dishes.add(mutton);
-        dishes.add(fish);
+        dishes1.add(chicken);
+        dishes1.add(mutton);
+        dishes1.add(fish);
 
-        restaurent1.dishesList = dishes;
+        restaurent1.dishesList = dishes1;
         Restaurent restaurent2 = new Restaurent();
         restaurent2.Name = "bawarachi";
         restaurent2.PhNo = "9010005566";
@@ -46,15 +46,15 @@ public class SwiggyService {
         Address restaurent2Address = new Address("LB Nager", "5", "45-888", "500043");
 
         Dishes chicken2 = new Dishes("Chicken", 650);
-        Dishes mutton12 = new Dishes("Mutton", 850);
+        Dishes mutton2 = new Dishes("Mutton", 850);
         Dishes fish2 = new Dishes("fish", 750);
 
         List<Dishes> dishes2 = new ArrayList<>();
-        dishes.add(chicken);
-        dishes.add(mutton);
-        dishes.add(fish);
+        dishes2.add(chicken);
+        dishes2.add(mutton);
+        dishes2.add(fish);
 
-        restaurent2.dishesList = dishes;
+        restaurent2.dishesList = dishes2;
 
 
         List<Restaurent> restaurents = new ArrayList<>();
