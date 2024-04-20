@@ -3,7 +3,7 @@ package votes;
 import java.util.*;
 
 public class NewTest {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Voter voter1 = new Voter();
         voter1.name = "vijay";
         voter1.aadharNo = "1234";
@@ -40,21 +40,22 @@ public class NewTest {
 
 
         Iterator<Voter> iterator = voterList.iterator();
-        List<String> seenAadharNo = new ArrayList<>();
-        for (; iterator.hasNext(); ) {
-            Voter voter = iterator.next();
-            if (!seenAadharNo.contains(voter.aadharNo)) {
-                seenAadharNo.add(voter.aadharNo);
-                if (voter.status.equals("Yes")) {
-                    System.out.println(voter.name + " has casted his vote.");
-                } else {
-                    System.out.println(voter.name + " has not casted his vote.");
-                }
-            } else {
-                System.out.println(voter.name + "is already in list .This is duplicate.");
-            }
 
-        }
+        List<String> seenAadharNo = new ArrayList<>();
+           for (; iterator.hasNext(); ) {
+            Voter voter = iterator.next();
+             if (!seenAadharNo.contains(voter.aadharNo)) {
+                seenAadharNo.add(voter.aadharNo);
+                 if (voter.status.equals("Yes")) {
+                    System.out.println(voter.name + " has casted his vote.");
+                    } else {
+                     System.out.println(voter.name + " has not casted his vote.");
+                      }
+                       } else {
+                          System.out.println(voter.name + "is already in list .This is duplicate.");
+                }
+            }
+       }
     }
-}
+
 
