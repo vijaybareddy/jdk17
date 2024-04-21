@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.*;
+import static java.util.stream.Collectors.*;
 
 public class Test {
     public static void main(String[] args) {
@@ -29,5 +30,31 @@ public class Test {
             }
         }
 
-    }
-}
+                Map<String,Double>groupBytypeSum=fullAccount.accountDetails.stream()
+                        .collect(groupingBy(AccountDetails::getType,
+                                summingDouble(AccountDetails::getAmount)));
+                System.out.println(groupBytypeSum);
+                Map<String,Double>groupBynormalMap=new HashMap<String,Double>();
+                double creditSum=0;
+                double debitSum=0;
+
+
+                for (int i=0;i<fullAccount.accountDetails.size();i++){
+                    if(fullAccount.accountDetails.get(i).type.equals("c")){
+                        AccountDetails details=fullAccount.accountDetails.get(i);
+                        creditSum=creditSum+details.getAmount();
+                    } else if (fullAccount.accountDetails.get(i).type.equals("D")) {
+                        AccountDetails details = fullAccount.accountDetails.get(i);
+                        debitSum = debitSum + details.getAmount();
+                    }
+                }
+                System.out.println("Normal Loop Group"+(creditSum+"---"+debitSum));
+
+                    }
+                }
+
+
+
+
+
+
