@@ -2,7 +2,7 @@ package votes;
 
 import java.util.*;
 
-public class  NewTest {
+public class NewTest {
      public static void main(String[] args) {
         Voter voter1 = new Voter();
         voter1.name = "vijay";
