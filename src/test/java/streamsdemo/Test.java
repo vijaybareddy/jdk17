@@ -43,15 +43,19 @@ public class Test {
                     if(fullAccount.accountDetails.get(i).type.equals("c")){
                         AccountDetails details=fullAccount.accountDetails.get(i);
                         creditSum=creditSum+details.getAmount();
+                        groupBynormalMap.put("credit",creditSum);
                     } else if (fullAccount.accountDetails.get(i).type.equals("D")) {
                         AccountDetails details = fullAccount.accountDetails.get(i);
                         debitSum = debitSum + details.getAmount();
+                        groupBynormalMap.put("Debit",debitSum);
                     }
                 }
-                System.out.println("Normal Loop Group"+(creditSum+"---"+debitSum));
+                //System.out.println("Normal Loop Group"+(creditSum+"---"+debitSum));
+        System.out.println(groupBynormalMap);
 
                     }
                 }
+
 
 
 
