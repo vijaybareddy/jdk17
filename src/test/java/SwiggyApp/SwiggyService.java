@@ -2,9 +2,10 @@ package SwiggyApp;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class SwiggyService {
-    public RestaurentList getRestaurent() {
+    Supplier<RestaurentList> getRestaurent=()-> {
         Restaurent restaurent = new Restaurent();
         restaurent.Name = "bawarachi";
         restaurent.PhNo = "9010005566";
@@ -70,7 +71,7 @@ public class SwiggyService {
         return restaurentList;
 
 
-    }
+    };
 
 
-}
+}    
