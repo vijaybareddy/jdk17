@@ -3,7 +3,7 @@ package newswiggy;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PaymentService {
+public class   PaymentService {
         private Map<String, Payment> paymentMethods;
 
         public PaymentService() {
