@@ -6,8 +6,8 @@ public class SwiggyService {
         RestaurantService restaurantService=new RestaurantService();
         DishService dishService = new DishService();
 
-        Dish biryani = new Dish("Biryani", 150.00);
-        Dish chicken65 = new Dish("Chicken65", 180.00);
+        Dish biryani = new Dish("Biryani", 250.00);
+        Dish chicken65 = new Dish("Chicken65", 300.00);
         Dish mandi = new Dish("Mandi", 500.00);
 
         biryani.setRating(4.5);
@@ -24,13 +24,14 @@ public class SwiggyService {
         Restaurant restaurant2 = new Restaurant("Jail Mandi", address2);
         restaurant2.addToMenu(mandi);
         restaurant2.addToMenu(biryani);
+        restaurant2.addToMenu(chicken65);
         restaurant2.setRating(4.6);
 
         swiggy.addRestaurant(restaurant1);
         swiggy.addRestaurant(restaurant2);
 
         String restaurantName = "Jail Mandi";
-        String[] dishNames = {"Mandi", "Biryani"};
+        String[] dishNames = {"Mandi", "Biryani","Chicken65"};
 
         PaymentService paymentService = new PaymentService();
         LoginService loginService = new LoginService();
