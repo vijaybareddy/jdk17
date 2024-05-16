@@ -8,7 +8,7 @@ public class SwiggyService {
 
         Dish biryani = new Dish("Biryani", 150.00);
         Dish chicken65 = new Dish("Chicken65", 180.00);
-        Dish mandi = new Dish("Mandi", 300.00);
+        Dish mandi = new Dish("Mandi", 500.00);
 
         biryani.setRating(4.5);
         chicken65.setRating(4.2);
